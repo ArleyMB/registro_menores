@@ -15,7 +15,7 @@ app.use(express.json());
 
 // Permitir solicitudes desde el puerto 5173 (donde corre Vite)
 const corsOptions = {
-  origin: 'http://localhost:5173', // El puerto del frontend
+  origin: 'https://registro-menores.onrender.com', // El puerto del frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
   allowedHeaders: ['Content-Type', 'Authorization'], // Cabeceras permitidas
   preflightContinue: false, // No continuar con la preflight a la siguiente ruta
